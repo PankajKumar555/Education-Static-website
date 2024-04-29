@@ -37,7 +37,7 @@ box-sizing: border-box;
 #homepageimages {
     display: flex;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     
 }
 
@@ -51,7 +51,7 @@ box-sizing: border-box;
 
 .centered{
     position: absolute;
-    top: 60%;
+    top: 50%;
     left: 0;
     width: 100%;
     z-index: 3;
@@ -69,6 +69,7 @@ box-sizing: border-box;
     position: relative;
     overflow: hidden;
     transition: all 1s;
+    width: 20%;
 }
 .column1::before{
     content: '';
@@ -93,6 +94,8 @@ box-sizing: border-box;
     position: relative;
     overflow: hidden;
     transition: all 1s;
+    width: 20%;
+
 }
 .column2::before{
     content: '';
@@ -117,6 +120,8 @@ box-sizing: border-box;
     position: relative;
     overflow: hidden;
     transition: all 1s;
+    width: 20%;
+
 }
 .column3::before{
     content: '';
@@ -141,6 +146,8 @@ box-sizing: border-box;
     position: relative;
     overflow: hidden;
     transition: all 1s;
+    width: 20%;
+
 }
 .column4::before{
     content: '';
@@ -165,6 +172,8 @@ box-sizing: border-box;
     position: relative;
     overflow: hidden;
     transition: all 1s;
+    width: 20%;
+
 }
 .column5::before{
     content: '';
@@ -185,10 +194,12 @@ box-sizing: border-box;
     opacity: 1;
     transform: translateY(0);
 }
-.btn{
-    border: 2px solid transparent;
-    border-radius: .5px;
-    padding: 25px 50px;
+.button-style{
+    border: 1px solid white;
+    color: white;
+    background: transparent;
+    border-radius: 2px;
+    padding: 5px 5px;
     display: inline-block;
          
 }
@@ -200,4 +211,13 @@ box-sizing: border-box;
 .pk a{
     text-decoration: none;
     
+}
+
+@media (max-width: 900px) {
+    #homepageimages {
+        display: block;        
+    }
+    .column1, .column2, .column3, .column4, .column5{
+        width: 100%;
+    }
 }
