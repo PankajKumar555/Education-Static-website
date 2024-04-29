@@ -1,3 +1,3 @@
-# MGtechno-project
-This is a single page website.
-https://pankajkumar555.github.io/MGtechno-project/
+This is stactic page of ed tech company.
+
+live link - https://marvelous-duckanoo-3b9344.netlify.app/
